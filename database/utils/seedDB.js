@@ -31,6 +31,8 @@ const seedDB = async () => {
 	})
 
 	await dummy_student.setCampus(dummy_campus);
+	await me_student.setCampus(dummy_campus);
+
 
 }
 
