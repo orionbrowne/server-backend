@@ -10,6 +10,17 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+
+  address: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    defaultValue: "https://www.usciences.edu/images/homepage-hero/one-university-endless-possibilities-slider-mobile.jpg"
   }
 
 });
